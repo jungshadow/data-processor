@@ -12,9 +12,9 @@
                  [joda-time "2.7"]
                  [clj-aws-s3 "0.3.10" :exclusions [joda-time]]
                  [com.climate/clj-newrelic "0.2.1"]
-                 [democracyworks.squishy "1.0.0" :exclusions [joda-time
-                                                              org.slf4j/slf4j-simple
-                                                              org.slf4j/slf4j-api]]
+                 [democracyworks/squishy "1.0.1-modernize-SNAPSHOT" :exclusions [joda-time
+                                                                                 org.slf4j/slf4j-simple
+                                                                                 org.slf4j/slf4j-api]]
                  [net.lingala.zip4j/zip4j "1.3.2"]
                  [turbovote.resource-config "0.1.4"]
                  [joplin.jdbc "0.2.7"]
