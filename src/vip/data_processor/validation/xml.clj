@@ -1,12 +1,12 @@
 (ns vip.data-processor.validation.xml
-  (:require [clojure.data.xml :as xml]
-            [clojure.walk :refer [stringify-keys]]
+  (:require [clojure.walk :refer [stringify-keys]]
             [korma.core :as korma]
             [vip.data-processor.db.postgres :as postgres]
             [vip.data-processor.db.sqlite :as sqlite]
             [vip.data-processor.util :as util]
             [vip.data-processor.validation.data-spec :as data-spec]
-            [vip.data-processor.errors :as errors])
+            [vip.data-processor.errors :as errors]
+            [vip.data-processor.xml :as xml])
   (:import [java.nio.file Files StandardCopyOption]))
 
 (def address-elements

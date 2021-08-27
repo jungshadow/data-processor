@@ -1,10 +1,10 @@
 (ns vip.data-processor.validation.xml.v5
-  (:require [clojure.data.xml :as xml]
-            [clojure.string :as str]
+  (:require [clojure.string :as str]
             [vip.data-processor.db.postgres :as postgres]
             [vip.data-processor.util :as util]
             [vip.data-processor.validation.data-spec :as data-spec]
-            [vip.data-processor.validation.data-spec.v5-2 :as data-spec.v5-2]))
+            [vip.data-processor.validation.data-spec.v5-2 :as data-spec.v5-2]
+            [vip.data-processor.xml :as xml]))
 
 (defn element->database-key [element]
   (->> element

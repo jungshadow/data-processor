@@ -383,3 +383,19 @@
                  :value "state11"
                  :parent_with_id "country.0.state.1"}}
               pvs))))
+
+(deftest no-xxe-test
+  (let [errors-chan (a/chan (a/dropping-buffer 100))
+        ctx (merge {:xml-source-file-path (xml-input "v3-xxe.xml")
+                    :data-specs v3-0/data-specs
+                    :errors-chan errors-chan
+                    :pipeline [load-xml]}
+                   (sqlite/temp-db "v3-xxe" "3.0"))
+        out-ctx (pipeline/run-pipeline ctx)
+        errors (all-errors errors-chan)]
+    (is (contains-error? errors {:severity :critical
+                                 :scope :import
+                                 :identifier :global
+                                 :error-type :malformed-xml
+                                 :error-value "Undeclared general entity \"xxe\"\n at [row,col {unknown-source}]: [10,22]"})
+        "Does not expand the XXE entity in this file.")))

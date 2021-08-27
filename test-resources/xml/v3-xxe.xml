@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE author [
+  <!ELEMENT author (#PCDATA)>
+  <!ENTITY xxe SYSTEM "file:///etc/hostname">]>
+<vip_object xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://election-info-standard.googlecode.com/files/election_spec_v3.0.xsd" schemaVersion="3.0">
+  <source id="0">
+    <name>State of Ohio</name>
+    <vip_id>39</vip_id>
+    <datetime>2012-10-31T15:45:10</datetime>
+    <description>&xxe;</description>
+  </source>
+</vip_object>
