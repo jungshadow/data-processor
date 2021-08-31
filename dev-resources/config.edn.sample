@@ -5,8 +5,9 @@
        :sqs {:queue "vip-processor-queue"
              :fail-queue "vip-processor-fail-queue"}
        :sns {:success-topic-arn "dev-feed-processed-success"
-	     :failure-topic-arn "dev-feed-processed-failure"}
- :postgres {:host "localhost"
+	     :failure-topic-arn "dev-feed-processed-failure"}}
+ :postgres {:database "dataprocessor"
+            :host "localhost"
             :port 5432
             :user "postgres"
             :password "sssssecret"}}
