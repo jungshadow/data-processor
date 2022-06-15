@@ -11,8 +11,8 @@
 
 (def problem-types [:warnings :errors :critical :fatal])
 
-(defn csv-inputs [file-uris]
-  (map #(Paths/get (.toURI (io/resource (str "csv/" %)))) file-uris))
+(defn csv-inputs [file-names]
+  (map #(Paths/get (.toURI (io/resource (str "csv/" %)))) file-names))
 
 (defn xml-input [file-name]
   ;; find all the places using xml-input and change to singular file type

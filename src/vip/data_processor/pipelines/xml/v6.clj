@@ -29,7 +29,6 @@
             [vip.data-processor.validation.v5.street-segment]
             [vip.data-processor.validation.v5.booleans]
             [vip.data-processor.validation.v5.polling-location]
-            [vip.data-processor.validation.v6.external-file]
             [vip.data-processor.validation.xml]
             [vip.data-processor.validation.xml.v5]))
 
@@ -50,7 +49,6 @@
     vip.data-processor.db.postgres/populate-elections-table]
 
    ;;add validations for the types introduced with 6.0 here
-   [vip.data-processor.validation.v6.external-file/validate-no-missing-file-uris]
 
    #_[vip.data-processor.validation.v5.ballot-measure-contest/validate-ballot-measure-types
     vip.data-processor.validation.v5.ballot-measure-contest/validate-no-missing-types
