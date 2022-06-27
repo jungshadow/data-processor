@@ -66,7 +66,17 @@
       <Value>soisf09s8y8w09ehwe</Value>
     </Checksum>
   </ExternalFile>
-  
+
+  <SpatialBoundary>
+    <ExternalGeospatialFeature>
+      <ExternalFileId>ef1</ExternalFileId>
+      <FileFormat>shp</FileFormat>
+      <FeatureIdentifier>
+        <Index>3</Index>
+      </FeatureIdentifier>
+    </ExternalGeospatialFeature>
+  </SpatialBoundary>
+
   <!-- A locality (e.g., a county) in which part of this election occurs. -->
   <Locality id="loc70001">
     <ElectionAdministrationId>ea40001</ElectionAdministrationId>

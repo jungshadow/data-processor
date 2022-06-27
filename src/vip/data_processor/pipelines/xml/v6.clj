@@ -50,7 +50,8 @@
     vip.data-processor.db.postgres/populate-elections-table]
 
    ;;add validations for the types introduced with 6.0 here
-   [vip.data-processor.validation.v6.external-file/validate-no-missing-file-uris]
+   [vip.data-processor.validation.v6.external-file/validate-no-missing-file-uris
+    vip.data-processor.validation.v6.spatial-boundary/validate-spatial-boundary]
 
    #_[vip.data-processor.validation.v5.ballot-measure-contest/validate-ballot-measure-types
     vip.data-processor.validation.v5.ballot-measure-contest/validate-no-missing-types

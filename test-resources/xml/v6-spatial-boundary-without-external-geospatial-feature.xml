@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<VipObject>
+
+  <!-- Contains invalid child -->
+  <SpatialBoundary>
+    <Invalid>howdy</Invalid>
+  </SpatialBoundary>
+
+  <!-- Empty ExternalGeospatialFeature -->
+  <SpatialBoundary>
+    <ExternalGeospatialFeature>
+    </ExternalGeospatialFeature>
+  </SpatialBoundary>
+
+  <!-- Missing ExternalGeospatialFeature -->
+  <SpatialBoundary>
+  </SpatialBoundary>
+
+  <!-- Correct SpatialBoundary -->
+  <SpatialBoundary>
+    <ExternalGeospatialFeature>
+      <ExternalFileId>ef1</ExternalFileId>
+      <FileFormat>shp</FileFormat>
+      <FeatureIdentifier>
+        <Index>3</Index>
+      </FeatureIdentifier>
+    </ExternalGeospatialFeature>
+  </SpatialBoundary>
+
+</VipObject>
