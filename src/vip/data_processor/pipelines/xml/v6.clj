@@ -30,6 +30,7 @@
             [vip.data-processor.validation.v5.booleans]
             [vip.data-processor.validation.v5.polling-location]
             [vip.data-processor.validation.v6.external-file]
+            [vip.data-processor.validation.v6.spatial-boundary]
             [vip.data-processor.validation.xml]
             [vip.data-processor.validation.xml.v5]))
 
